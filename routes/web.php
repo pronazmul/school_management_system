@@ -35,3 +35,37 @@ Route::get('/courseDataForUpdate', 'App\Http\Controllers\CourseController@Course
 Route::put('/updateCourse', 'App\Http\Controllers\CourseController@updateCourse');
 Route::delete('/deleteCourse', 'App\Http\Controllers\CourseController@deleteCourse');
 
+//Class Room Route 
+Route::post('/insertClass', 'App\Http\Controllers\ClassroomController@insertClass');
+Route::get('/retriveClass', 'App\Http\Controllers\ClassroomController@retriveClass');
+Route::get('/classDataForUpdate', 'App\Http\Controllers\ClassroomController@ClassDataForUpdate');
+Route::put('/updateClass', 'App\Http\Controllers\ClassroomController@updateClass');
+Route::delete('/deleteClass', 'App\Http\Controllers\ClassroomController@deleteClass');
+
+//Attendance Route 
+Route::post('/insertAttendance', 'App\Http\Controllers\AttendanceController@insertAttendance');
+Route::get('/retriveAttendance', 'App\Http\Controllers\AttendanceController@retriveAttendance');
+Route::get('/attendanceDataForUpdate', 'App\Http\Controllers\AttendanceController@AttendanceDataForUpdate');
+Route::put('/updateAttendance', 'App\Http\Controllers\AttendanceController@updateAttendance');
+Route::delete('/deleteAttendance', 'App\Http\Controllers\AttendanceController@deleteAttendance');
+
+//Grade Route 
+Route::post('/insertGrade', 'App\Http\Controllers\GradeController@insertGrade');
+Route::get('/retriveGrade', 'App\Http\Controllers\GradeController@retriveGrade');
+Route::get('/gradeDataForUpdate', 'App\Http\Controllers\GradeController@GradeDataForUpdate');
+Route::put('/updateGrade', 'App\Http\Controllers\GradeController@updateGrade');
+Route::delete('/deleteGrade', 'App\Http\Controllers\GradeController@deleteGrade');
+
+//Exam Route 
+Route::post('/insertExam', 'App\Http\Controllers\ExamController@insertExam');
+Route::get('/retriveExam', 'App\Http\Controllers\ExamController@retriveExam');
+Route::get('/examDataForUpdate', 'App\Http\Controllers\ExamController@ExamDataForUpdate');
+Route::put('/updateExam', 'App\Http\Controllers\ExamController@updateExam');
+Route::delete('/deleteExam', 'App\Http\Controllers\ExamController@deleteExam');
+
+//Result Route 
+Route::post('/insertResult', 'App\Http\Controllers\ResultController@insertResult');
+Route::get('/retriveResult', 'App\Http\Controllers\ResultController@retriveResult');
+Route::get('/resultDataForUpdate', 'App\Http\Controllers\ResultController@ResultDataForUpdate');
+Route::put('/updateResult', 'App\Http\Controllers\ResultController@updateResult');
+Route::delete('/deleteResult', 'App\Http\Controllers\ResultController@deleteResult');
